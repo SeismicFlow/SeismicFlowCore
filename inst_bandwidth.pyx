@@ -1,0 +1,267 @@
+# distutils: language = c++
+# cython: language_level=3
+# cython: boundscheck=False
+# cython: wraparound=False
+# cython: initializedcheck=False
+# cython: nonecheck=False
+# cython: cdivision=True
+# cython: infer_types=True
+
+import numpy as np
+cimport numpy as cnp
+from cython.parallel import prange
+from libc.math cimport sqrt, fabs, M_PI
+
+cnp.import_array()
+
+# FFTW interface
+cdef extern from "fftw3.h":
+    ctypedef struct fftwf_plan_s:
+        pass
+    ctypedef fftwf_plan_s* fftwf_plan
+    
+    ctypedef float fftwf_complex[2]
+    
+    cdef enum:
+        FFTW_FORWARD = -1
+        FFTW_BACKWARD = 1
+        FFTW_ESTIMATE = 1 << 6
+    
+    void* fftwf_malloc(size_t n) nogil
+    void fftwf_free(void* p) nogil
+    
+    fftwf_plan fftwf_plan_many_dft(int rank, const int* n, int howmany,
+                                    fftwf_complex* input, const int* inembed,
+                                    int istride, int idist,
+                                    fftwf_complex* output, const int* onembed,
+                                    int ostride, int odist,
+                                    int sign, unsigned flags)
+    
+    void fftwf_execute_dft(fftwf_plan plan, fftwf_complex* input, fftwf_complex* output) nogil
+    void fftwf_destroy_plan(fftwf_plan plan)
+
+def instantaneous_bandwidth(cnp.ndarray[cnp.float32_t, ndim=3] data, float dt, 
+                   float threshold=1e-6, bint use_masking=True, int window_size=33):
+    """
+    Ultra-fast instantaneous bandwidth computation using FFTW with Petrel-style masking.
+    
+    Computes bandwidth as the time derivative of envelope divided by envelope,
+    normalized to Hz.
+    
+    Parameters:
+    -----------
+    data : ndarray of float32, shape (time, inline, crossline)
+        Input seismic data
+    dt : float
+        Sampling interval in seconds
+    threshold : float, optional
+        Input amplitude threshold below which output is set to zero (default: 1e-6)
+    use_masking : bool, optional
+        If True, zeros out output where input is effectively zero
+    window_size : int, optional
+        Size of local window for checking dead regions (default: 33, matching Petrel)
+        
+    Returns:
+    --------
+    bandwidth : ndarray of float32, shape (time, inline, crossline)
+        Instantaneous bandwidth in Hz, capped at Nyquist frequency
+        
+    Notes:
+    ------
+    - Uses Petrel's approach: window_size=33 to identify dead/muted traces
+    - Checks INPUT data amplitude in local window to mask dead regions
+    - Correctly preserves zero-crossings in active traces
+    """
+    cdef int num_time = data.shape[0]
+    cdef int num_inline = data.shape[1]
+    cdef int num_crossline = data.shape[2]
+    
+    cdef cnp.ndarray[cnp.float32_t, ndim=3] output = np.empty_like(data)
+    
+    cdef cnp.float32_t[:, :, :] data_view = data
+    cdef cnp.float32_t[:, :, :] output_view = output
+    
+    cdef int i, j, k, half_n, t_start, t_end, t, half_window
+    cdef fftwf_complex* buffer_in
+    cdef fftwf_complex* buffer_out
+    cdef float* envelope_buffer
+    cdef float real_part, imag_part, envelope_val, gradient_val
+    cdef float bandwidth, prev_env, next_env, curr_env
+    cdef float scale, max_amp, abs_val
+    cdef float two_pi = 2.0 * M_PI
+    cdef float nyquist_freq = 1.0 / (2.0 * dt)
+    
+    half_n = num_time // 2
+    scale = 1.0 / <float>num_time
+    half_window = window_size // 2
+    
+    # FFTW batch parameters
+    cdef int rank = 1
+    cdef int n[1]
+    n[0] = num_time
+    cdef int howmany = num_crossline
+    cdef int idist = num_time
+    cdef int odist = num_time
+    cdef int istride = 1
+    cdef int ostride = 1
+    
+    # Create reusable plans before parallel region
+    cdef fftwf_complex* temp_in = <fftwf_complex*>fftwf_malloc(num_crossline * num_time * sizeof(fftwf_complex))
+    cdef fftwf_complex* temp_out = <fftwf_complex*>fftwf_malloc(num_crossline * num_time * sizeof(fftwf_complex))
+    
+    if temp_in == NULL or temp_out == NULL:
+        if temp_in != NULL:
+            fftwf_free(temp_in)
+        if temp_out != NULL:
+            fftwf_free(temp_out)
+        raise MemoryError("Failed to allocate FFTW buffers")
+    
+    cdef fftwf_plan plan_forward = fftwf_plan_many_dft(rank, n, howmany,
+                                       temp_in, NULL, istride, idist,
+                                       temp_out, NULL, ostride, odist,
+                                       FFTW_FORWARD, FFTW_ESTIMATE)
+    
+    cdef fftwf_plan plan_backward = fftwf_plan_many_dft(rank, n, howmany,
+                                        temp_out, NULL, istride, idist,
+                                        temp_in, NULL, ostride, odist,
+                                        FFTW_BACKWARD, FFTW_ESTIMATE)
+    
+    if plan_forward == NULL or plan_backward == NULL:
+        if plan_forward != NULL:
+            fftwf_destroy_plan(plan_forward)
+        if plan_backward != NULL:
+            fftwf_destroy_plan(plan_backward)
+        fftwf_free(temp_in)
+        fftwf_free(temp_out)
+        raise RuntimeError("Failed to create FFTW plans")
+    
+    fftwf_free(temp_in)
+    fftwf_free(temp_out)
+    
+    # Process each inline in parallel
+    for j in prange(num_inline, nogil=True, schedule='static'):
+        buffer_in = <fftwf_complex*>fftwf_malloc(num_crossline * num_time * sizeof(fftwf_complex))
+        buffer_out = <fftwf_complex*>fftwf_malloc(num_crossline * num_time * sizeof(fftwf_complex))
+        envelope_buffer = <float*>fftwf_malloc(num_crossline * num_time * sizeof(float))
+        
+        if buffer_in == NULL or buffer_out == NULL or envelope_buffer == NULL:
+            if buffer_in != NULL:
+                fftwf_free(buffer_in)
+            if buffer_out != NULL:
+                fftwf_free(buffer_out)
+            if envelope_buffer != NULL:
+                fftwf_free(envelope_buffer)
+            continue
+        
+        # Load inline slice
+        for k in range(num_crossline):
+            for i in range(num_time):
+                buffer_in[k * num_time + i][0] = data_view[i, j, k]
+                buffer_in[k * num_time + i][1] = 0.0
+        
+        # Forward FFT
+        fftwf_execute_dft(plan_forward, buffer_in, buffer_out)
+        
+        # Apply Hilbert transform
+        for k in range(num_crossline):
+            if num_time % 2 == 0:
+                for i in range(1, half_n):
+                    buffer_out[k * num_time + i][0] *= 2.0
+                    buffer_out[k * num_time + i][1] *= 2.0
+                for i in range(half_n + 1, num_time):
+                    buffer_out[k * num_time + i][0] = 0.0
+                    buffer_out[k * num_time + i][1] = 0.0
+            else:
+                for i in range(1, half_n + 1):
+                    buffer_out[k * num_time + i][0] *= 2.0
+                    buffer_out[k * num_time + i][1] *= 2.0
+                for i in range(half_n + 1, num_time):
+                    buffer_out[k * num_time + i][0] = 0.0
+                    buffer_out[k * num_time + i][1] = 0.0
+        
+        # Inverse FFT
+        fftwf_execute_dft(plan_backward, buffer_out, buffer_in)
+        
+        # Compute envelope and store
+        for k in range(num_crossline):
+            for i in range(num_time):
+                real_part = buffer_in[k * num_time + i][0] * scale
+                imag_part = buffer_in[k * num_time + i][1] * scale
+                envelope_buffer[k * num_time + i] = sqrt(real_part * real_part + imag_part * imag_part)
+        
+        # Compute bandwidth with INPUT-BASED masking (Petrel-style)
+        for k in range(num_crossline):
+            for i in range(num_time):
+                if use_masking:
+                    # Check local window for maximum amplitude (Petrel-style)
+                    t_start = i - half_window if i >= half_window else 0
+                    t_end = i + half_window + 1 if i + half_window + 1 <= num_time else num_time
+                    
+                    max_amp = 0.0
+                    for t in range(t_start, t_end):
+                        abs_val = fabs(data_view[t, j, k])
+                        if abs_val > max_amp:
+                            max_amp = abs_val
+                    
+                    if max_amp < threshold:
+                        # Local region is dead/empty
+                        output_view[i, j, k] = 0.0
+                    else:
+                        # Normal computation
+                        curr_env = envelope_buffer[k * num_time + i]
+                        
+                        # Compute gradient using central difference
+                        if i == 0:
+                            next_env = envelope_buffer[k * num_time + 1]
+                            gradient_val = (next_env - curr_env) / dt
+                        elif i == num_time - 1:
+                            prev_env = envelope_buffer[k * num_time + i - 1]
+                            gradient_val = (curr_env - prev_env) / dt
+                        else:
+                            prev_env = envelope_buffer[k * num_time + i - 1]
+                            next_env = envelope_buffer[k * num_time + i + 1]
+                            gradient_val = (next_env - prev_env) / (2.0 * dt)
+                        
+                        # Compute bandwidth: |dE/dt| / (2π * E)
+                        if curr_env < 1e-10:
+                            bandwidth = 0.0
+                        else:
+                            bandwidth = fabs(gradient_val) / (two_pi * curr_env)
+                            
+                            # Cap at Nyquist frequency
+                            if bandwidth > nyquist_freq:
+                                bandwidth = nyquist_freq
+                        
+                        output_view[i, j, k] = bandwidth
+                else:
+                    # No masking - just compute
+                    curr_env = envelope_buffer[k * num_time + i]
+                    
+                    if i == 0:
+                        next_env = envelope_buffer[k * num_time + 1]
+                        gradient_val = (next_env - curr_env) / dt
+                    elif i == num_time - 1:
+                        prev_env = envelope_buffer[k * num_time + i - 1]
+                        gradient_val = (curr_env - prev_env) / dt
+                    else:
+                        prev_env = envelope_buffer[k * num_time + i - 1]
+                        next_env = envelope_buffer[k * num_time + i + 1]
+                        gradient_val = (next_env - prev_env) / (2.0 * dt)
+                    
+                    if curr_env < 1e-10:
+                        bandwidth = 0.0
+                    else:
+                        bandwidth = fabs(gradient_val) / (two_pi * curr_env)
+                        if bandwidth > nyquist_freq:
+                            bandwidth = nyquist_freq
+                    
+                    output_view[i, j, k] = bandwidth
+        
+        fftwf_free(buffer_in)
+        fftwf_free(buffer_out)
+        fftwf_free(envelope_buffer)
+    
+    fftwf_destroy_plan(plan_forward)
+    fftwf_destroy_plan(plan_backward)
+    
+    return output
