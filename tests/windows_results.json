@@ -1,0 +1,3302 @@
+{
+ "env": {
+  "platform": "Windows-10-10.0.19045-SP0",
+  "machine": "AMD64",
+  "python": "3.12.10",
+  "numpy": "2.4.6",
+  "cpu_count": 8,
+  "seed": 20260101,
+  "cube_shape": [
+   128,
+   16,
+   16
+  ],
+  "rtol": 0.0001,
+  "atol_frac": 1e-05
+ },
+ "summary": {
+  "modules": 28,
+  "import_ok": 28,
+  "run_ok": 28,
+  "sane": 28,
+  "repeatable": 28,
+  "input_unmodified": 28,
+  "thread_inv_ok": 28,
+  "thread_inv_bitwise": 28,
+  "package_import_ok": true,
+  "parity_ok": 28,
+  "parity_bitwise": 6
+ },
+ "package": {
+  "ok": true,
+  "missing": []
+ },
+ "rows": [
+  {
+   "module": "agc",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 1.4867585934460857e-07,
+   "parity_bitwise": false
+  },
+  {
+   "module": "app_polarity",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 0.0,
+   "parity_bitwise": true
+  },
+  {
+   "module": "azimuth",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 7.205667554235364e-07,
+   "parity_bitwise": false
+  },
+  {
+   "module": "chaos",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 6.111204363562881e-07,
+   "parity_bitwise": false
+  },
+  {
+   "module": "coherence",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 4.370214069317339e-07,
+   "parity_bitwise": false
+  },
+  {
+   "module": "cos_phase",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 9.387731552124023e-07,
+   "parity_bitwise": false
+  },
+  {
+   "module": "depth_conversion",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 0.0,
+   "parity_bitwise": true
+  },
+  {
+   "module": "dip",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 1.1072739808927099e-06,
+   "parity_bitwise": false
+  },
+  {
+   "module": "dix_conversion",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 1.0944021439775761e-07,
+   "parity_bitwise": false
+  },
+  {
+   "module": "dix_inversion",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 0.0,
+   "parity_bitwise": true
+  },
+  {
+   "module": "dominant_freq",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 1.8310547992587159e-07,
+   "parity_bitwise": false
+  },
+  {
+   "module": "envelope",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 9.844416866951328e-08,
+   "parity_bitwise": false
+  },
+  {
+   "module": "first_derivative",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 7.394414052581086e-08,
+   "parity_bitwise": false
+  },
+  {
+   "module": "gradient_magnitude",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 1.2337110812731233e-07,
+   "parity_bitwise": false
+  },
+  {
+   "module": "gsd",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 2.466912941326614e-07,
+   "parity_bitwise": false
+  },
+  {
+   "module": "inst_bandwidth",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 2.5939942989498475e-07,
+   "parity_bitwise": false
+  },
+  {
+   "module": "inst_freq",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 2.464227426506265e-07,
+   "parity_bitwise": false
+  },
+  {
+   "module": "inst_phase",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 8.477375241859516e-08,
+   "parity_bitwise": false
+  },
+  {
+   "module": "phase_shift",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 0.0,
+   "parity_bitwise": true
+  },
+  {
+   "module": "quad_amp",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 0.0,
+   "parity_bitwise": true
+  },
+  {
+   "module": "reflection_intensity",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 1.8130448577515223e-07,
+   "parity_bitwise": false
+  },
+  {
+   "module": "relative_ai",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 0.0,
+   "parity_bitwise": true
+  },
+  {
+   "module": "rms_amp",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 8.151136415136725e-08,
+   "parity_bitwise": false
+  },
+  {
+   "module": "second_derivative",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 1.3372670380524685e-07,
+   "parity_bitwise": false
+  },
+  {
+   "module": "sweetness",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 2.6782572241935996e-06,
+   "parity_bitwise": false
+  },
+  {
+   "module": "time_gain",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 1.26630077327923e-07,
+   "parity_bitwise": false
+  },
+  {
+   "module": "variance",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 6.380198198122654e-07,
+   "parity_bitwise": false
+  },
+  {
+   "module": "xcorr",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": true,
+   "parity_max_norm_err": 2.39186555228056e-07,
+   "parity_bitwise": false
+  }
+ ],
+ "details": {
+  "agc": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 3.0517578125e-05,
+      "max_norm_err": 1.4867585934460857e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 1.4867585934460857e-07,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 3.0517578125e-05,
+      "max_norm_err": 1.4867585934460857e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 1.4867585934460857e-07,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "agc",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0013873999996576458,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\agc.cp312-win_amd64.pyd",
+     "call_s": 0.0027873000071849674,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -205.2624969482422,
+       "max": 203.4280548095703,
+       "mean": -0.19484348136780572,
+       "frac_zero": 0.0,
+       "sha256": "5fd5faf8c29e828719e35017f8c3ea622f8e95095c51d12d002b6647b2abee14"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21993609999481123
+    },
+    "4": {
+     "name": "agc",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0012533999979496002,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\agc.cp312-win_amd64.pyd",
+     "call_s": 0.0018951000092783943,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -205.2624969482422,
+       "max": 203.4280548095703,
+       "mean": -0.19484348136780572,
+       "frac_zero": 0.0,
+       "sha256": "5fd5faf8c29e828719e35017f8c3ea622f8e95095c51d12d002b6647b2abee14"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2199347999994643
+    }
+   }
+  },
+  "app_polarity": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": true,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0,
+      "max_norm_err": 0.0,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 0.0,
+    "bit_identical": true
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": true,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0,
+      "max_norm_err": 0.0,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 0.0,
+    "bit_identical": true
+   },
+   "worker": {
+    "1": {
+     "name": "app_polarity",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0015749999874969944,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\app_polarity.cp312-win_amd64.pyd",
+     "call_s": 0.0029481999954441562,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -1.0,
+       "max": 1.0,
+       "mean": 0.026153564453125,
+       "frac_zero": 0.897857666015625,
+       "sha256": "5120e18c14aa19d330ff6e026502baaf96ce419be8a58efb7960898e9127b6ae"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21358599999803118
+    },
+    "4": {
+     "name": "app_polarity",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0015026000037323684,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\app_polarity.cp312-win_amd64.pyd",
+     "call_s": 0.0012528999941423535,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -1.0,
+       "max": 1.0,
+       "mean": 0.026153564453125,
+       "frac_zero": 0.897857666015625,
+       "sha256": "5120e18c14aa19d330ff6e026502baaf96ce419be8a58efb7960898e9127b6ae"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.23032210000383202
+    }
+   }
+  },
+  "azimuth": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0002593994140625,
+      "max_norm_err": 7.205667554235364e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 7.205667554235364e-07,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0002593994140625,
+      "max_norm_err": 7.205667554235364e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 7.205667554235364e-07,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "azimuth",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0013548999995691702,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\azimuth.cp312-win_amd64.pyd",
+     "call_s": 0.002503299998352304,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.001956323627382517,
+       "max": 359.99359130859375,
+       "mean": 169.25067608652233,
+       "frac_zero": 0.0,
+       "sha256": "d2e9133f9f84cc2f55025a0595718b3556d87fccda6d9e932cad0f3bfcf76a0a"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21030479999899399
+    },
+    "4": {
+     "name": "azimuth",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0013374999980442226,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\azimuth.cp312-win_amd64.pyd",
+     "call_s": 0.0006017999985488132,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.001956323627382517,
+       "max": 359.99359130859375,
+       "mean": 169.25067608652233,
+       "frac_zero": 0.0,
+       "sha256": "d2e9133f9f84cc2f55025a0595718b3556d87fccda6d9e932cad0f3bfcf76a0a"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2179450999974506
+    }
+   }
+  },
+  "chaos": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 5.364418029785156e-07,
+      "max_norm_err": 6.111204363562881e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 6.111204363562881e-07,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 5.364418029785156e-07,
+      "max_norm_err": 6.111204363562881e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 6.111204363562881e-07,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "chaos",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0012092000106349587,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\chaos.cp312-win_amd64.pyd",
+     "call_s": 0.01819469999463763,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.05165056511759758,
+       "max": 0.8778010010719299,
+       "mean": 0.20198667615977683,
+       "frac_zero": 0.0,
+       "sha256": "f88fda94c128706fb2cf5833391e0dbfe9bf6aba48aefcbac25182fefa464457"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.24614170000131708
+    },
+    "4": {
+     "name": "chaos",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011866999993799254,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\chaos.cp312-win_amd64.pyd",
+     "call_s": 0.011557500009075738,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.05165056511759758,
+       "max": 0.8778010010719299,
+       "mean": 0.20198667615977683,
+       "frac_zero": 0.0,
+       "sha256": "f88fda94c128706fb2cf5833391e0dbfe9bf6aba48aefcbac25182fefa464457"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.23994059998949524
+    }
+   }
+  },
+  "coherence": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 4.172325134277344e-07,
+      "max_norm_err": 4.370214069317339e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 4.370214069317339e-07,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 4.172325134277344e-07,
+      "max_norm_err": 4.370214069317339e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 4.370214069317339e-07,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "coherence",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0010749999928520992,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\coherence.cp312-win_amd64.pyd",
+     "call_s": 0.01688060000014957,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.08381465822458267,
+       "max": 0.9547187089920044,
+       "mean": 0.786509136396262,
+       "frac_zero": 0.0,
+       "sha256": "2254fbd8fb07dc593df6a56407724d3b0983ae1a1a17d4387a59f59adf329aba"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.24263520000386052
+    },
+    "4": {
+     "name": "coherence",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0010447999957250431,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\coherence.cp312-win_amd64.pyd",
+     "call_s": 0.005940799994277768,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.08381465822458267,
+       "max": 0.9547187089920044,
+       "mean": 0.786509136396262,
+       "frac_zero": 0.0,
+       "sha256": "2254fbd8fb07dc593df6a56407724d3b0983ae1a1a17d4387a59f59adf329aba"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2243804000027012
+    }
+   }
+  },
+  "cos_phase": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 9.387731552124023e-07,
+      "max_norm_err": 9.387731552124023e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 9.387731552124023e-07,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 9.387731552124023e-07,
+      "max_norm_err": 9.387731552124023e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 9.387731552124023e-07,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "cos_phase",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0012338000087765977,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\cos_phase.cp312-win_amd64.pyd",
+     "call_s": 0.0037951999984215945,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -1.0,
+       "max": 1.0,
+       "mean": -0.026649296159365857,
+       "frac_zero": 0.0,
+       "sha256": "fc30b68af73d01274621efe23ddf4cdca4c7e9ea3422e750419bcbe7cd6f20ac"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2168002999969758
+    },
+    "4": {
+     "name": "cos_phase",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0013857000012649223,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\cos_phase.cp312-win_amd64.pyd",
+     "call_s": 0.001574199995957315,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -1.0,
+       "max": 1.0,
+       "mean": -0.026649296159365857,
+       "frac_zero": 0.0,
+       "sha256": "fc30b68af73d01274621efe23ddf4cdca4c7e9ea3422e750419bcbe7cd6f20ac"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21883699999307282
+    }
+   }
+  },
+  "depth_conversion": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": true,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0,
+      "max_norm_err": 0.0,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     },
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": true,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0,
+      "max_norm_err": 0.0,
+      "n_violations": 0,
+      "n_compared": 1,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 0.0,
+    "bit_identical": true
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": true,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0,
+      "max_norm_err": 0.0,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     },
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": true,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0,
+      "max_norm_err": 0.0,
+      "n_violations": 0,
+      "n_compared": 1,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 0.0,
+    "bit_identical": true
+   },
+   "worker": {
+    "1": {
+     "name": "depth_conversion",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0012738000077661127,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\depth_conversion.cp312-win_amd64.pyd",
+     "call_s": 0.003584599995519966,
+     "n_outputs": 2,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -254.8564453125,
+       "max": 263.7543029785156,
+       "mean": 0.6062004195362078,
+       "frac_zero": 0.023590087890625,
+       "sha256": "3e08df926739d0de02ba7d3bea61b460f810ab3d4020976ccee5f94c220b6a7c"
+      },
+      {
+       "shape": [],
+       "dtype": "float64",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 4.377677917480469,
+       "max": 4.377677917480469,
+       "mean": 4.377677917480469,
+       "frac_zero": 0.0,
+       "sha256": "629eabf9ed761ef1434f61592a1cd881fe787238e4ceed0323001c424e9fd140"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21650760000920855
+    },
+    "4": {
+     "name": "depth_conversion",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.001212400005897507,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\depth_conversion.cp312-win_amd64.pyd",
+     "call_s": 0.0010756999981822446,
+     "n_outputs": 2,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -254.8564453125,
+       "max": 263.7543029785156,
+       "mean": 0.6062004195362078,
+       "frac_zero": 0.023590087890625,
+       "sha256": "3e08df926739d0de02ba7d3bea61b460f810ab3d4020976ccee5f94c220b6a7c"
+      },
+      {
+       "shape": [],
+       "dtype": "float64",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 4.377677917480469,
+       "max": 4.377677917480469,
+       "mean": 4.377677917480469,
+       "frac_zero": 0.0,
+       "sha256": "629eabf9ed761ef1434f61592a1cd881fe787238e4ceed0323001c424e9fd140"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.22395919999689795
+    }
+   }
+  },
+  "dip": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 9.918212890625e-05,
+      "max_norm_err": 1.1072739808927099e-06,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 1.1072739808927099e-06,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 9.918212890625e-05,
+      "max_norm_err": 1.1072739808927099e-06,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 1.1072739808927099e-06,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "dip",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011875000054715201,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\dip.cp312-win_amd64.pyd",
+     "call_s": 0.0025178000068990514,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -89.57324981689453,
+       "max": 89.4961166381836,
+       "mean": -0.6160928401647894,
+       "frac_zero": 0.0,
+       "sha256": "478ce0a9e8819a4d2d7963dee1747e663dbd3d175e5c6e540f705d70bf3ec1c2"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2122805000108201
+    },
+    "4": {
+     "name": "dip",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011625000042840838,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\dip.cp312-win_amd64.pyd",
+     "call_s": 0.0005875000060768798,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -89.57324981689453,
+       "max": 89.4961166381836,
+       "mean": -0.6160928401647894,
+       "frac_zero": 0.0,
+       "sha256": "478ce0a9e8819a4d2d7963dee1747e663dbd3d175e5c6e540f705d70bf3ec1c2"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.20793489999778103
+    }
+   }
+  },
+  "dix_conversion": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 0.000244140625,
+      "max_norm_err": 1.0944021439775761e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 1.0944021439775761e-07,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 0.000244140625,
+      "max_norm_err": 1.0944021439775761e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 1.0944021439775761e-07,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "dix_conversion",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011673999979393557,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\dix_conversion.cp312-win_amd64.pyd",
+     "call_s": 0.00224240000534337,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 1435.0,
+       "max": 2230.812744140625,
+       "mean": 1829.139557454735,
+       "frac_zero": 0.0,
+       "sha256": "51dc41ddf046be3fa482e27d26d223b9c29bda52609d0205ba572f4337200a92"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.215609900013078
+    },
+    "4": {
+     "name": "dix_conversion",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011659000010695308,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\dix_conversion.cp312-win_amd64.pyd",
+     "call_s": 0.0003878999996231869,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 1435.0,
+       "max": 2230.812744140625,
+       "mean": 1829.139557454735,
+       "frac_zero": 0.0,
+       "sha256": "51dc41ddf046be3fa482e27d26d223b9c29bda52609d0205ba572f4337200a92"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.22006329998839647
+    }
+   }
+  },
+  "dix_inversion": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": true,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0,
+      "max_norm_err": 0.0,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 0.0,
+    "bit_identical": true
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": true,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0,
+      "max_norm_err": 0.0,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 0.0,
+    "bit_identical": true
+   },
+   "worker": {
+    "1": {
+     "name": "dix_inversion",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.001304699995671399,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\dix_inversion.cp312-win_amd64.pyd",
+     "call_s": 0.0018140000029234216,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 1435.0,
+       "max": 2835.001220703125,
+       "mean": 2135.0004428327084,
+       "frac_zero": 0.0,
+       "sha256": "909219e0690e488aa418f12ff4818f035124e3282ebccf4e957dca4e4371c83b"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21341739999479614
+    },
+    "4": {
+     "name": "dix_inversion",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0012035999970976263,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\dix_inversion.cp312-win_amd64.pyd",
+     "call_s": 0.0005251999973552302,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 1435.0,
+       "max": 2835.001220703125,
+       "mean": 2135.0004428327084,
+       "frac_zero": 0.0,
+       "sha256": "909219e0690e488aa418f12ff4818f035124e3282ebccf4e957dca4e4371c83b"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21367139999347273
+    }
+   }
+  },
+  "dominant_freq": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 2.288818359375e-05,
+      "max_norm_err": 1.8310547992587159e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 1.8310547992587159e-07,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 2.288818359375e-05,
+      "max_norm_err": 1.8310547992587159e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 1.8310547992587159e-07,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "dominant_freq",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0014235999988159165,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\dominant_freq.cp312-win_amd64.pyd",
+     "call_s": 0.005090500009828247,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 10.48551082611084,
+       "max": 124.99999237060547,
+       "mean": 30.143693419959163,
+       "frac_zero": 0.0,
+       "sha256": "da90548a2beee7fdc5a2e669b6a44fdf4e21d1ccfd8f3d73f1500c57738e1355"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2178744000120787
+    },
+    "4": {
+     "name": "dominant_freq",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0013212999911047518,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\dominant_freq.cp312-win_amd64.pyd",
+     "call_s": 0.001852600005804561,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 10.48551082611084,
+       "max": 124.99999237060547,
+       "mean": 30.143693419959163,
+       "frac_zero": 0.0,
+       "sha256": "da90548a2beee7fdc5a2e669b6a44fdf4e21d1ccfd8f3d73f1500c57738e1355"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.223138100001961
+    }
+   }
+  },
+  "envelope": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 3.0517578125e-05,
+      "max_norm_err": 9.844416866951328e-08,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 9.844416866951328e-08,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 3.0517578125e-05,
+      "max_norm_err": 9.844416866951328e-08,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 9.844416866951328e-08,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "envelope",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0012497999996412545,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\envelope.cp312-win_amd64.pyd",
+     "call_s": 0.0012968999944860116,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 1.3499529361724854,
+       "max": 309.9988708496094,
+       "mean": 129.2043459500237,
+       "frac_zero": 0.0,
+       "sha256": "413cae0988e0421e8ff35fa613123f1e15aa9cfcae3337e26c1a452b7600e51e"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21164749999297783
+    },
+    "4": {
+     "name": "envelope",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0014091000048210844,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\envelope.cp312-win_amd64.pyd",
+     "call_s": 0.0012546999932965264,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 1.3499529361724854,
+       "max": 309.9988708496094,
+       "mean": 129.2043459500237,
+       "frac_zero": 0.0,
+       "sha256": "413cae0988e0421e8ff35fa613123f1e15aa9cfcae3337e26c1a452b7600e51e"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.22196150000672787
+    }
+   }
+  },
+  "first_derivative": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 1.52587890625e-05,
+      "max_norm_err": 7.394414052581086e-08,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 7.394414052581086e-08,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 1.52587890625e-05,
+      "max_norm_err": 7.394414052581086e-08,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 7.394414052581086e-08,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "first_derivative",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.001240700003108941,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\first_derivative.cp312-win_amd64.pyd",
+     "call_s": 0.00046239999937824905,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -206.35562133789062,
+       "max": 203.29464721679688,
+       "mean": -0.03614152596765052,
+       "frac_zero": 0.0,
+       "sha256": "bc609c901eaf8e8c5f575c30c341ff9d35c3b7dc533b3d43f6bd3ea2df7ab156"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2103229999920586
+    },
+    "4": {
+     "name": "first_derivative",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.001223200000822544,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\first_derivative.cp312-win_amd64.pyd",
+     "call_s": 0.00044070000876672566,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -206.35562133789062,
+       "max": 203.29464721679688,
+       "mean": -0.03614152596765052,
+       "frac_zero": 0.0,
+       "sha256": "bc609c901eaf8e8c5f575c30c341ff9d35c3b7dc533b3d43f6bd3ea2df7ab156"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.22132220001367386
+    }
+   }
+  },
+  "gradient_magnitude": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0001220703125,
+      "max_norm_err": 1.2337110812731233e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 1.2337110812731233e-07,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0001220703125,
+      "max_norm_err": 1.2337110812731233e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 1.2337110812731233e-07,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "gradient_magnitude",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011433000036049634,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\gradient_magnitude.cp312-win_amd64.pyd",
+     "call_s": 0.002193499996792525,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 2.780095100402832,
+       "max": 989.456298828125,
+       "mean": 124.07006255989836,
+       "frac_zero": 0.0,
+       "sha256": "bfbd6ff36af45aa12950748fcd734a75147ef392a799e1b711b23974406589e3"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.211330199992517
+    },
+    "4": {
+     "name": "gradient_magnitude",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011310999980196357,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\gradient_magnitude.cp312-win_amd64.pyd",
+     "call_s": 0.0003777000092668459,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 2.780095100402832,
+       "max": 989.456298828125,
+       "mean": 124.07006255989836,
+       "frac_zero": 0.0,
+       "sha256": "bfbd6ff36af45aa12950748fcd734a75147ef392a799e1b711b23974406589e3"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.22429129999363795
+    }
+   }
+  },
+  "gsd": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 4.57763671875e-05,
+      "max_norm_err": 2.466912941326614e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 2.466912941326614e-07,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 4.57763671875e-05,
+      "max_norm_err": 2.466912941326614e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 2.466912941326614e-07,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "gsd",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0013395999994827434,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\gsd.cp312-win_amd64.pyd",
+     "call_s": 0.0022852999973110855,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -185.56134033203125,
+       "max": 177.85433959960938,
+       "mean": 0.21122432146285064,
+       "frac_zero": 0.0,
+       "sha256": "024602cd1a51f3b8bf014dd403c62bb146e76c84317b6e9df6b8d6cedfe5eec3"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2117831999930786
+    },
+    "4": {
+     "name": "gsd",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011576999968383461,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\gsd.cp312-win_amd64.pyd",
+     "call_s": 0.00042460000258870423,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -185.56134033203125,
+       "max": 177.85433959960938,
+       "mean": 0.21122432146285064,
+       "frac_zero": 0.0,
+       "sha256": "024602cd1a51f3b8bf014dd403c62bb146e76c84317b6e9df6b8d6cedfe5eec3"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.22681130000273697
+    }
+   }
+  },
+  "inst_bandwidth": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 3.24249267578125e-05,
+      "max_norm_err": 2.5939942989498475e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 2.5939942989498475e-07,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 3.24249267578125e-05,
+      "max_norm_err": 2.5939942989498475e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 2.5939942989498475e-07,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "inst_bandwidth",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011851000017486513,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\inst_bandwidth.cp312-win_amd64.pyd",
+     "call_s": 0.0027221999916946515,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.0002101144491462037,
+       "max": 124.99999237060547,
+       "mean": 7.651651581727873,
+       "frac_zero": 0.0,
+       "sha256": "b1adb545a58c9824c9ff10cfb3934ad84e6a0f6ade1ead20e19d0dd4a6e61beb"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21808899998723064
+    },
+    "4": {
+     "name": "inst_bandwidth",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0014663999900221825,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\inst_bandwidth.cp312-win_amd64.pyd",
+     "call_s": 0.0017103999998653308,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.0002101144491462037,
+       "max": 124.99999237060547,
+       "mean": 7.651651581727873,
+       "frac_zero": 0.0,
+       "sha256": "b1adb545a58c9824c9ff10cfb3934ad84e6a0f6ade1ead20e19d0dd4a6e61beb"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2225663999997778
+    }
+   }
+  },
+  "inst_freq": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 1.1444091796875e-05,
+      "max_norm_err": 2.464227426506265e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 2.464227426506265e-07,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 1.1444091796875e-05,
+      "max_norm_err": 2.464227426506265e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 2.464227426506265e-07,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "inst_freq",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0012210999993840232,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\inst_freq.cp312-win_amd64.pyd",
+     "call_s": 0.004483600001549348,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 6.38140344619751,
+       "max": 46.440887451171875,
+       "mean": 28.245656839353614,
+       "frac_zero": 0.0,
+       "sha256": "7a473137a72061f49eba363ec4e64509dcb45ef64810f874c02b18db2b402dd2"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21822930000780616
+    },
+    "4": {
+     "name": "inst_freq",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0012986999936401844,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\inst_freq.cp312-win_amd64.pyd",
+     "call_s": 0.001991000011912547,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 6.38140344619751,
+       "max": 46.440887451171875,
+       "mean": 28.245656839353614,
+       "frac_zero": 0.0,
+       "sha256": "7a473137a72061f49eba363ec4e64509dcb45ef64810f874c02b18db2b402dd2"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2220268999953987
+    }
+   }
+  },
+  "inst_phase": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 1.52587890625e-05,
+      "max_norm_err": 8.477375241859516e-08,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 8.477375241859516e-08,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 1.52587890625e-05,
+      "max_norm_err": 8.477375241859516e-08,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 8.477375241859516e-08,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "inst_phase",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0014688000082969666,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\inst_phase.cp312-win_amd64.pyd",
+     "call_s": 0.003141000008326955,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -179.9539337158203,
+       "max": 179.9942626953125,
+       "mean": -1.8539811427038444,
+       "frac_zero": 0.0,
+       "sha256": "0bd3479e29a2c20277449ba5e272efe8aa727b72a47fc3f7c0bad6e8e4cce200"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21896379999816418
+    },
+    "4": {
+     "name": "inst_phase",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011670000094454736,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\inst_phase.cp312-win_amd64.pyd",
+     "call_s": 0.001822499994887039,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -179.9539337158203,
+       "max": 179.9942626953125,
+       "mean": -1.8539811427038444,
+       "frac_zero": 0.0,
+       "sha256": "0bd3479e29a2c20277449ba5e272efe8aa727b72a47fc3f7c0bad6e8e4cce200"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2206229000003077
+    }
+   }
+  },
+  "phase_shift": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": true,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0,
+      "max_norm_err": 0.0,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 0.0,
+    "bit_identical": true
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": true,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0,
+      "max_norm_err": 0.0,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 0.0,
+    "bit_identical": true
+   },
+   "worker": {
+    "1": {
+     "name": "phase_shift",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011926000006496906,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\phase_shift.cp312-win_amd64.pyd",
+     "call_s": 0.0018620999908307567,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -288.0036315917969,
+       "max": 286.48541259765625,
+       "mean": 0.5139921125622564,
+       "frac_zero": 0.0,
+       "sha256": "00a40d56a8115d747668d7e8fe6003d78872cffcf084ec2cb2bfdf036945f70b"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21215520000259858
+    },
+    "4": {
+     "name": "phase_shift",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0012934999977005646,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\phase_shift.cp312-win_amd64.pyd",
+     "call_s": 0.001261299999896437,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -288.0036315917969,
+       "max": 286.48541259765625,
+       "mean": 0.5139921125622564,
+       "frac_zero": 0.0,
+       "sha256": "00a40d56a8115d747668d7e8fe6003d78872cffcf084ec2cb2bfdf036945f70b"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2264026000048034
+    }
+   }
+  },
+  "quad_amp": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": true,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0,
+      "max_norm_err": 0.0,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 0.0,
+    "bit_identical": true
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": true,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0,
+      "max_norm_err": 0.0,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 0.0,
+    "bit_identical": true
+   },
+   "worker": {
+    "1": {
+     "name": "quad_amp",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0012241999938851222,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\quad_amp.cp312-win_amd64.pyd",
+     "call_s": 0.002743599994573742,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -282.567138671875,
+       "max": 301.66900634765625,
+       "mean": 3.777677193284035e-08,
+       "frac_zero": 0.0,
+       "sha256": "e89659052bff863fcb41d350f37dcff1e4acbe9c03879797670f9f5184a5e9a0"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21333679999224842
+    },
+    "4": {
+     "name": "quad_amp",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0013201999972807243,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\quad_amp.cp312-win_amd64.pyd",
+     "call_s": 0.0013961000076960772,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -282.567138671875,
+       "max": 301.66900634765625,
+       "mean": 3.777677193284035e-08,
+       "frac_zero": 0.0,
+       "sha256": "e89659052bff863fcb41d350f37dcff1e4acbe9c03879797670f9f5184a5e9a0"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.22100180000416003
+    }
+   }
+  },
+  "reflection_intensity": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 4.57763671875e-05,
+      "max_norm_err": 1.8130448577515223e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 1.8130448577515223e-07,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 4.57763671875e-05,
+      "max_norm_err": 1.8130448577515223e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 1.8130448577515223e-07,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "reflection_intensity",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0014748999965377152,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\reflection_intensity.cp312-win_amd64.pyd",
+     "call_s": 0.004917899990687147,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 22.34539031982422,
+       "max": 252.48336791992188,
+       "mean": 129.17250754171982,
+       "frac_zero": 0.0,
+       "sha256": "1475560aa4418b497e9337ed0fddae9d0abd515c423d2cdb13b843481b39cd62"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21732569999585394
+    },
+    "4": {
+     "name": "reflection_intensity",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011554000084288418,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\reflection_intensity.cp312-win_amd64.pyd",
+     "call_s": 0.0013407000078586861,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 22.34539031982422,
+       "max": 252.48336791992188,
+       "mean": 129.17250754171982,
+       "frac_zero": 0.0,
+       "sha256": "1475560aa4418b497e9337ed0fddae9d0abd515c423d2cdb13b843481b39cd62"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21619800000917166
+    }
+   }
+  },
+  "relative_ai": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": true,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0,
+      "max_norm_err": 0.0,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 0.0,
+    "bit_identical": true
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": true,
+      "nonfinite_match": true,
+      "max_abs_err": 0.0,
+      "max_norm_err": 0.0,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 0.0,
+    "bit_identical": true
+   },
+   "worker": {
+    "1": {
+     "name": "relative_ai",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.8744627000123728,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\relative_ai.cp312-win_amd64.pyd",
+     "call_s": 0.00789769999391865,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -411.5897521972656,
+       "max": 458.86407470703125,
+       "mean": 1.9210595762779121,
+       "frac_zero": 0.0,
+       "sha256": "4e5dcaade5891f07e103ec073cb9defae562ffece8de0259819cb2d15e251d40"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 1.1917669999966165
+    },
+    "4": {
+     "name": "relative_ai",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.9019071000075201,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\relative_ai.cp312-win_amd64.pyd",
+     "call_s": 0.0025003000046126544,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -411.5897521972656,
+       "max": 458.86407470703125,
+       "mean": 1.9210595762779121,
+       "frac_zero": 0.0,
+       "sha256": "4e5dcaade5891f07e103ec073cb9defae562ffece8de0259819cb2d15e251d40"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 1.2392210000107298
+    }
+   }
+  },
+  "rms_amp": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 1.52587890625e-05,
+      "max_norm_err": 8.151136415136725e-08,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 8.151136415136725e-08,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 1.52587890625e-05,
+      "max_norm_err": 8.151136415136725e-08,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 8.151136415136725e-08,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "rms_amp",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011723999923560768,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\rms_amp.cp312-win_amd64.pyd",
+     "call_s": 0.0004813999985344708,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 20.090370178222656,
+       "max": 187.19830322265625,
+       "mean": 96.29895415651845,
+       "frac_zero": 0.0,
+       "sha256": "a85a951bb355b458287988732ed3bb6da5340f5244753fb403c2fb32eaa3e9ce"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21200210000097286
+    },
+    "4": {
+     "name": "rms_amp",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.001149999996414408,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\rms_amp.cp312-win_amd64.pyd",
+     "call_s": 0.0019158000068273395,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 20.090370178222656,
+       "max": 187.19830322265625,
+       "mean": 96.29895415651845,
+       "frac_zero": 0.0,
+       "sha256": "a85a951bb355b458287988732ed3bb6da5340f5244753fb403c2fb32eaa3e9ce"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2322241999936523
+    }
+   }
+  },
+  "second_derivative": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 3.0517578125e-05,
+      "max_norm_err": 1.3372670380524685e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 1.3372670380524685e-07,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 3.0517578125e-05,
+      "max_norm_err": 1.3372670380524685e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 1.3372670380524685e-07,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "second_derivative",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011563999869395047,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\second_derivative.cp312-win_amd64.pyd",
+     "call_s": 0.001945199997862801,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -217.25186157226562,
+       "max": 228.20855712890625,
+       "mean": -0.3164074259548215,
+       "frac_zero": 0.0,
+       "sha256": "93da52a4782f1572bb41d72b2c52a88154b44cecf484a87afeedec04f2754340"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2116165000043111
+    },
+    "4": {
+     "name": "second_derivative",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0012417999969329685,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\second_derivative.cp312-win_amd64.pyd",
+     "call_s": 0.0003723999980138615,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -217.25186157226562,
+       "max": 228.20855712890625,
+       "mean": -0.3164074259548215,
+       "frac_zero": 0.0,
+       "sha256": "93da52a4782f1572bb41d72b2c52a88154b44cecf484a87afeedec04f2754340"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2113050000043586
+    }
+   }
+  },
+  "sweetness": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 0.00014495849609375,
+      "max_norm_err": 2.6782572241935996e-06,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 2.6782572241935996e-06,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 0.00014495849609375,
+      "max_norm_err": 2.6782572241935996e-06,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 2.6782572241935996e-06,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "sweetness",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.001207799999974668,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\sweetness.cp312-win_amd64.pyd",
+     "call_s": 0.007030500011751428,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.2405678629875183,
+       "max": 54.12418746948242,
+       "mean": 22.121115231078875,
+       "frac_zero": 0.0,
+       "sha256": "1f81a2ca07fe2f1f9e6276abd79502800a9b4ec218bdc700da21aaa310291842"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.22309420000237878
+    },
+    "4": {
+     "name": "sweetness",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0012069999938830733,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\sweetness.cp312-win_amd64.pyd",
+     "call_s": 0.0023612999939359725,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.2405678629875183,
+       "max": 54.12418746948242,
+       "mean": 22.121115231078875,
+       "frac_zero": 0.0,
+       "sha256": "1f81a2ca07fe2f1f9e6276abd79502800a9b4ec218bdc700da21aaa310291842"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.22098739999637473
+    }
+   }
+  },
+  "time_gain": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 6.103515625e-05,
+      "max_norm_err": 1.26630077327923e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 1.26630077327923e-07,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 6.103515625e-05,
+      "max_norm_err": 1.26630077327923e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 1.26630077327923e-07,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "time_gain",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.00115640000149142,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\time_gain.cp312-win_amd64.pyd",
+     "call_s": 0.00203719999990426,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -443.04095458984375,
+       "max": 481.9957275390625,
+       "mean": 0.7070959506250674,
+       "frac_zero": 0.0,
+       "sha256": "1ab96e81e74cbe542c7e362b0274f28eee7ccae03be6fa21ab80cb986bcaada7"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2122176999982912
+    },
+    "4": {
+     "name": "time_gain",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011478000087663531,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\time_gain.cp312-win_amd64.pyd",
+     "call_s": 0.0003782999992836267,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -443.04095458984375,
+       "max": 481.9957275390625,
+       "mean": 0.7070959506250674,
+       "frac_zero": 0.0,
+       "sha256": "1ab96e81e74cbe542c7e362b0274f28eee7ccae03be6fa21ab80cb986bcaada7"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2258499000017764
+    }
+   }
+  },
+  "variance": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 4.172325134277344e-07,
+      "max_norm_err": 6.380198198122654e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 6.380198198122654e-07,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 4.172325134277344e-07,
+      "max_norm_err": 6.380198198122654e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 6.380198198122654e-07,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "variance",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0013496999890776351,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\variance.cp312-win_amd64.pyd",
+     "call_s": 0.009972899992135353,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.01861417293548584,
+       "max": 0.6539491415023804,
+       "mean": 0.22793580135657976,
+       "frac_zero": 0.0,
+       "sha256": "c710847cf9e592dbd13a6496c2e7f19faafa980a8a29d0674895f9a4a9d70cfb"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2342307999933837
+    },
+    "4": {
+     "name": "variance",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011498999956529588,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\variance.cp312-win_amd64.pyd",
+     "call_s": 0.0039345000113826245,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.01861417293548584,
+       "max": 0.6539491415023804,
+       "mean": 0.22793580135657976,
+       "frac_zero": 0.0,
+       "sha256": "c710847cf9e592dbd13a6496c2e7f19faafa980a8a29d0674895f9a4a9d70cfb"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2179764000029536
+    }
+   }
+  },
+  "xcorr": {
+   "parity_t1": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 2.384185791015625e-07,
+      "max_norm_err": 2.39186555228056e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 2.39186555228056e-07,
+    "bit_identical": false
+   },
+   "parity_t4": {
+    "ok": true,
+    "per_output": [
+     {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "bit_identical": false,
+      "nonfinite_match": true,
+      "max_abs_err": 2.384185791015625e-07,
+      "max_norm_err": 2.39186555228056e-07,
+      "n_violations": 0,
+      "n_compared": 32768,
+      "ok": true
+     }
+    ],
+    "max_norm_err": 2.39186555228056e-07,
+    "bit_identical": false
+   },
+   "worker": {
+    "1": {
+     "name": "xcorr",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.001226599997607991,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\xcorr.cp312-win_amd64.pyd",
+     "call_s": 0.003077000001212582,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -0.7291867733001709,
+       "max": 0.9967892169952393,
+       "mean": -0.0029463947194547924,
+       "frac_zero": 0.8671875,
+       "sha256": "bfd678c655ca2701cc13a89f48f4ac6a40a1d35213ada5b7688b455e8a1a9b7e"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.21441849999246188
+    },
+    "4": {
+     "name": "xcorr",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0012424000015016645,
+     "module_file": "F:\\py3.12\\SeismicFlowTheOpenVersion\\New Projects\\EVERYTHING ELSE\\Articles\\Seismicflowcore Article\\REVISION\\seismicflowcore\\xcorr.cp312-win_amd64.pyd",
+     "call_s": 0.0020809999987250194,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -0.7291867733001709,
+       "max": 0.9967892169952393,
+       "mean": -0.0029463947194547924,
+       "frac_zero": 0.8671875,
+       "sha256": "bfd678c655ca2701cc13a89f48f4ac6a40a1d35213ada5b7688b455e8a1a9b7e"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.2111165000096662
+    }
+   }
+  }
+ }
+}

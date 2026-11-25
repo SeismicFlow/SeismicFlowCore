@@ -1,0 +1,2272 @@
+{
+ "env": {
+  "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "python": "3.12.9",
+  "numpy": "2.5.5",
+  "cpu_count": 1,
+  "seed": 20260101,
+  "cube_shape": [
+   128,
+   16,
+   16
+  ],
+  "rtol": 0.0001,
+  "atol_frac": 1e-05,
+  "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "glibc": "ldd (Ubuntu GLIBC 2.39-0ubuntu8.12) 2.39"
+ },
+ "summary": {
+  "modules": 28,
+  "import_ok": 28,
+  "run_ok": 28,
+  "sane": 28,
+  "repeatable": 28,
+  "input_unmodified": 28,
+  "thread_inv_ok": 28,
+  "thread_inv_bitwise": 28,
+  "package_import_ok": true
+ },
+ "package": {
+  "ok": true,
+  "missing": []
+ },
+ "rows": [
+  {
+   "module": "agc",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "app_polarity",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "azimuth",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "chaos",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "coherence",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "cos_phase",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "depth_conversion",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "dip",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "dix_conversion",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "dix_inversion",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "dominant_freq",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "envelope",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "first_derivative",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "gradient_magnitude",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "gsd",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "inst_bandwidth",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "inst_freq",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "inst_phase",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "phase_shift",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "quad_amp",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "reflection_intensity",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "relative_ai",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "rms_amp",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "second_derivative",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "sweetness",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "time_gain",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "variance",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  },
+  {
+   "module": "xcorr",
+   "import_ok": true,
+   "run_ok": true,
+   "sane": true,
+   "repeatable": true,
+   "input_unmodified": true,
+   "error": "",
+   "thread_inv_ok": true,
+   "thread_inv_max_norm_err": 0.0,
+   "thread_inv_bitwise": true,
+   "parity_ok": null,
+   "parity_max_norm_err": null,
+   "parity_bitwise": null
+  }
+ ],
+ "details": {
+  "agc": {
+   "worker": {
+    "1": {
+     "name": "agc",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0007497010000179216,
+     "module_file": "/home/claude/work/SeismicFlowCore/agc.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0005507409999836455,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -205.2624969482422,
+       "max": 203.4280548095703,
+       "mean": -0.19484350690039154,
+       "frac_zero": 0.0,
+       "sha256": "305ff3dad3c248827c7c41b70e0070065e2e6aeb0e339a229eab25c885091ee7"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11112063199993827
+    },
+    "4": {
+     "name": "agc",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0007903750000650689,
+     "module_file": "/home/claude/work/SeismicFlowCore/agc.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0032520890000569125,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -205.2624969482422,
+       "max": 203.4280548095703,
+       "mean": -0.19484350690039154,
+       "frac_zero": 0.0,
+       "sha256": "305ff3dad3c248827c7c41b70e0070065e2e6aeb0e339a229eab25c885091ee7"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11610280699994746
+    }
+   }
+  },
+  "app_polarity": {
+   "worker": {
+    "1": {
+     "name": "app_polarity",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0008461850000003324,
+     "module_file": "/home/claude/work/SeismicFlowCore/app_polarity.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0008249559999740086,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -1.0,
+       "max": 1.0,
+       "mean": 0.026153564453125,
+       "frac_zero": 0.897857666015625,
+       "sha256": "5120e18c14aa19d330ff6e026502baaf96ce419be8a58efb7960898e9127b6ae"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.1129347889999508
+    },
+    "4": {
+     "name": "app_polarity",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0011870800000224335,
+     "module_file": "/home/claude/work/SeismicFlowCore/app_polarity.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0015292909999971016,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -1.0,
+       "max": 1.0,
+       "mean": 0.026153564453125,
+       "frac_zero": 0.897857666015625,
+       "sha256": "5120e18c14aa19d330ff6e026502baaf96ce419be8a58efb7960898e9127b6ae"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.1495272949999844
+    }
+   }
+  },
+  "azimuth": {
+   "worker": {
+    "1": {
+     "name": "azimuth",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0007131639999897743,
+     "module_file": "/home/claude/work/SeismicFlowCore/azimuth.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0011612910000167176,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.0019564495887607336,
+       "max": 359.99359130859375,
+       "mean": 169.25067613038354,
+       "frac_zero": 0.0,
+       "sha256": "6eabbf5fcaba98e7c834576de05f77cd7a38f244f5798cd28dd925ff6e62579b"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.12416620299995884
+    },
+    "4": {
+     "name": "azimuth",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0006626289999758228,
+     "module_file": "/home/claude/work/SeismicFlowCore/azimuth.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0013952100000551582,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.0019564495887607336,
+       "max": 359.99359130859375,
+       "mean": 169.25067613038354,
+       "frac_zero": 0.0,
+       "sha256": "6eabbf5fcaba98e7c834576de05f77cd7a38f244f5798cd28dd925ff6e62579b"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11209384200003569
+    }
+   }
+  },
+  "chaos": {
+   "worker": {
+    "1": {
+     "name": "chaos",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0005601080000587899,
+     "module_file": "/home/claude/work/SeismicFlowCore/chaos.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.01601479400005701,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.051650527864694595,
+       "max": 0.877800464630127,
+       "mean": 0.2019866758595299,
+       "frac_zero": 0.0,
+       "sha256": "dbac517f95d058a467fd9351e899aa3373f71ffca5a0833a35fbb8513aa9a9bb"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.1405068180000626
+    },
+    "4": {
+     "name": "chaos",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0006134960000281353,
+     "module_file": "/home/claude/work/SeismicFlowCore/chaos.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.01563209200003257,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.051650527864694595,
+       "max": 0.877800464630127,
+       "mean": 0.2019866758595299,
+       "frac_zero": 0.0,
+       "sha256": "dbac517f95d058a467fd9351e899aa3373f71ffca5a0833a35fbb8513aa9a9bb"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.1417951720000019
+    }
+   }
+  },
+  "coherence": {
+   "worker": {
+    "1": {
+     "name": "coherence",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0006573089999619697,
+     "module_file": "/home/claude/work/SeismicFlowCore/coherence.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.012661816999980147,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.08381467312574387,
+       "max": 0.9547187089920044,
+       "mean": 0.7865091405717521,
+       "frac_zero": 0.0,
+       "sha256": "5df3ffd73d585602968e12f468cb0ba5bd07588c08908814af8d9afb1616a3cc"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.13769217900005515
+    },
+    "4": {
+     "name": "coherence",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0007079169999997248,
+     "module_file": "/home/claude/work/SeismicFlowCore/coherence.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.012922797999976865,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.08381467312574387,
+       "max": 0.9547187089920044,
+       "mean": 0.7865091405717521,
+       "frac_zero": 0.0,
+       "sha256": "5df3ffd73d585602968e12f468cb0ba5bd07588c08908814af8d9afb1616a3cc"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.16489633499998035
+    }
+   }
+  },
+  "cos_phase": {
+   "worker": {
+    "1": {
+     "name": "cos_phase",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0008719850000034057,
+     "module_file": "/home/claude/work/SeismicFlowCore/cos_phase.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0014379760000338138,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -1.0,
+       "max": 1.0,
+       "mean": -0.02664928855064687,
+       "frac_zero": 0.0,
+       "sha256": "7dceb022953ca812c67547d070eb5a55254bb4db4ac0b4fc60326899bd3a856c"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11394685599998411
+    },
+    "4": {
+     "name": "cos_phase",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0010182180000128938,
+     "module_file": "/home/claude/work/SeismicFlowCore/cos_phase.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.001664500000060798,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -1.0,
+       "max": 1.0,
+       "mean": -0.02664928855064687,
+       "frac_zero": 0.0,
+       "sha256": "7dceb022953ca812c67547d070eb5a55254bb4db4ac0b4fc60326899bd3a856c"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11475070699998469
+    }
+   }
+  },
+  "depth_conversion": {
+   "worker": {
+    "1": {
+     "name": "depth_conversion",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0007038029999648643,
+     "module_file": "/home/claude/work/SeismicFlowCore/depth_conversion.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0009247709999726794,
+     "n_outputs": 2,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -254.8564453125,
+       "max": 263.7543029785156,
+       "mean": 0.6062004195362078,
+       "frac_zero": 0.023590087890625,
+       "sha256": "3e08df926739d0de02ba7d3bea61b460f810ab3d4020976ccee5f94c220b6a7c"
+      },
+      {
+       "shape": [],
+       "dtype": "float64",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 4.377677917480469,
+       "max": 4.377677917480469,
+       "mean": 4.377677917480469,
+       "frac_zero": 0.0,
+       "sha256": "629eabf9ed761ef1434f61592a1cd881fe787238e4ceed0323001c424e9fd140"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11269000499999038
+    },
+    "4": {
+     "name": "depth_conversion",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0008123999999725129,
+     "module_file": "/home/claude/work/SeismicFlowCore/depth_conversion.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.00116384900002231,
+     "n_outputs": 2,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -254.8564453125,
+       "max": 263.7543029785156,
+       "mean": 0.6062004195362078,
+       "frac_zero": 0.023590087890625,
+       "sha256": "3e08df926739d0de02ba7d3bea61b460f810ab3d4020976ccee5f94c220b6a7c"
+      },
+      {
+       "shape": [],
+       "dtype": "float64",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 4.377677917480469,
+       "max": 4.377677917480469,
+       "mean": 4.377677917480469,
+       "frac_zero": 0.0,
+       "sha256": "629eabf9ed761ef1434f61592a1cd881fe787238e4ceed0323001c424e9fd140"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11312954700008504
+    }
+   }
+  },
+  "dip": {
+   "worker": {
+    "1": {
+     "name": "dip",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.000669926000000487,
+     "module_file": "/home/claude/work/SeismicFlowCore/dip.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.001145377000057124,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -89.57324981689453,
+       "max": 89.4961166381836,
+       "mean": -0.6160928487630031,
+       "frac_zero": 0.0,
+       "sha256": "feaef3ab27eb05b14074381079ec593426aaaba8819d3180ed807bc2c84b0e63"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11333035999996355
+    },
+    "4": {
+     "name": "dip",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0007142010000507071,
+     "module_file": "/home/claude/work/SeismicFlowCore/dip.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0012813939999887225,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -89.57324981689453,
+       "max": 89.4961166381836,
+       "mean": -0.6160928487630031,
+       "frac_zero": 0.0,
+       "sha256": "feaef3ab27eb05b14074381079ec593426aaaba8819d3180ed807bc2c84b0e63"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11330614700000297
+    }
+   }
+  },
+  "dix_conversion": {
+   "worker": {
+    "1": {
+     "name": "dix_conversion",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0007222259999934977,
+     "module_file": "/home/claude/work/SeismicFlowCore/dix_conversion.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.00016883299997516588,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 1435.0,
+       "max": 2230.812744140625,
+       "mean": 1829.13955777511,
+       "frac_zero": 0.0,
+       "sha256": "d30081847535400618c3a61a9c84762a8e33be062a470d9e340a9c19e37b344b"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11087638900005459
+    },
+    "4": {
+     "name": "dix_conversion",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0007894639999221909,
+     "module_file": "/home/claude/work/SeismicFlowCore/dix_conversion.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.00028831800000261865,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 1435.0,
+       "max": 2230.812744140625,
+       "mean": 1829.13955777511,
+       "frac_zero": 0.0,
+       "sha256": "d30081847535400618c3a61a9c84762a8e33be062a470d9e340a9c19e37b344b"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11300976899997295
+    }
+   }
+  },
+  "dix_inversion": {
+   "worker": {
+    "1": {
+     "name": "dix_inversion",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0007675289999724555,
+     "module_file": "/home/claude/work/SeismicFlowCore/dix_inversion.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.00012082399996415916,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 1435.0,
+       "max": 2835.001220703125,
+       "mean": 2135.0004428327084,
+       "frac_zero": 0.0,
+       "sha256": "909219e0690e488aa418f12ff4818f035124e3282ebccf4e957dca4e4371c83b"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11195024500000272
+    },
+    "4": {
+     "name": "dix_inversion",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0008511249999401116,
+     "module_file": "/home/claude/work/SeismicFlowCore/dix_inversion.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0026547649999884015,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 1435.0,
+       "max": 2835.001220703125,
+       "mean": 2135.0004428327084,
+       "frac_zero": 0.0,
+       "sha256": "909219e0690e488aa418f12ff4818f035124e3282ebccf4e957dca4e4371c83b"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.14225356500003272
+    }
+   }
+  },
+  "dominant_freq": {
+   "worker": {
+    "1": {
+     "name": "dominant_freq",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0009102359999815235,
+     "module_file": "/home/claude/work/SeismicFlowCore/dominant_freq.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.002143912999940767,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 10.485509872436523,
+       "max": 124.99999237060547,
+       "mean": 30.143693487450946,
+       "frac_zero": 0.0,
+       "sha256": "f3edc30457ee028c71d58913e2bffab1a23bde594ac2c8747b6707c80079de86"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11870348100001138
+    },
+    "4": {
+     "name": "dominant_freq",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0008939699999928052,
+     "module_file": "/home/claude/work/SeismicFlowCore/dominant_freq.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.002551899999957641,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 10.485509872436523,
+       "max": 124.99999237060547,
+       "mean": 30.143693487450946,
+       "frac_zero": 0.0,
+       "sha256": "f3edc30457ee028c71d58913e2bffab1a23bde594ac2c8747b6707c80079de86"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11583001600001808
+    }
+   }
+  },
+  "envelope": {
+   "worker": {
+    "1": {
+     "name": "envelope",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0008632639999177627,
+     "module_file": "/home/claude/work/SeismicFlowCore/envelope.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0008164509999915026,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 1.3499529361724854,
+       "max": 309.99884033203125,
+       "mean": 129.20434594441394,
+       "frac_zero": 0.0,
+       "sha256": "a069ad513f49885c4d2e4955d83ba11fe805eb5869177692fc5e63ad691deed6"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.13154812699997365
+    },
+    "4": {
+     "name": "envelope",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0009383439999055554,
+     "module_file": "/home/claude/work/SeismicFlowCore/envelope.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0009936640000205443,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 1.3499529361724854,
+       "max": 309.99884033203125,
+       "mean": 129.20434594441394,
+       "frac_zero": 0.0,
+       "sha256": "a069ad513f49885c4d2e4955d83ba11fe805eb5869177692fc5e63ad691deed6"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.12235468400001537
+    }
+   }
+  },
+  "first_derivative": {
+   "worker": {
+    "1": {
+     "name": "first_derivative",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0006947120000404539,
+     "module_file": "/home/claude/work/SeismicFlowCore/first_derivative.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 8.094499992239435e-05,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -206.35562133789062,
+       "max": 203.29464721679688,
+       "mean": -0.03614152421414474,
+       "frac_zero": 0.0,
+       "sha256": "936a2c78f800ac27038fb16fca8f67a0b0fc6204d86406df4560d64445229b9d"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11238015499998255
+    },
+    "4": {
+     "name": "first_derivative",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0009127140000373402,
+     "module_file": "/home/claude/work/SeismicFlowCore/first_derivative.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.00028237699996225274,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -206.35562133789062,
+       "max": 203.29464721679688,
+       "mean": -0.03614152421414474,
+       "frac_zero": 0.0,
+       "sha256": "936a2c78f800ac27038fb16fca8f67a0b0fc6204d86406df4560d64445229b9d"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11920119400008389
+    }
+   }
+  },
+  "gradient_magnitude": {
+   "worker": {
+    "1": {
+     "name": "gradient_magnitude",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0008719580000615679,
+     "module_file": "/home/claude/work/SeismicFlowCore/gradient_magnitude.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0002498210000112522,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 2.7800943851470947,
+       "max": 989.4562377929688,
+       "mean": 124.07006267230463,
+       "frac_zero": 0.0,
+       "sha256": "6a89e067f521270af65658492c0e47a65230d34b8428314eda14afea820fe451"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11386266600004546
+    },
+    "4": {
+     "name": "gradient_magnitude",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0007458810000571248,
+     "module_file": "/home/claude/work/SeismicFlowCore/gradient_magnitude.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.00045908200002031663,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 2.7800943851470947,
+       "max": 989.4562377929688,
+       "mean": 124.07006267230463,
+       "frac_zero": 0.0,
+       "sha256": "6a89e067f521270af65658492c0e47a65230d34b8428314eda14afea820fe451"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.1152543970000579
+    }
+   }
+  },
+  "gsd": {
+   "worker": {
+    "1": {
+     "name": "gsd",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0009241260000862894,
+     "module_file": "/home/claude/work/SeismicFlowCore/gsd.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.00038140999993174773,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -185.56134033203125,
+       "max": 177.85435485839844,
+       "mean": 0.2112243480755538,
+       "frac_zero": 0.0,
+       "sha256": "b97e1fc58f814e2e867b06a8037ddc6605fd2eab5806f60640cde9bd16fc176b"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.1144798750000291
+    },
+    "4": {
+     "name": "gsd",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0008018439999659677,
+     "module_file": "/home/claude/work/SeismicFlowCore/gsd.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0005998530000397295,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -185.56134033203125,
+       "max": 177.85435485839844,
+       "mean": 0.2112243480755538,
+       "frac_zero": 0.0,
+       "sha256": "b97e1fc58f814e2e867b06a8037ddc6605fd2eab5806f60640cde9bd16fc176b"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11334525400002349
+    }
+   }
+  },
+  "inst_bandwidth": {
+   "worker": {
+    "1": {
+     "name": "inst_bandwidth",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0008602099999279744,
+     "module_file": "/home/claude/work/SeismicFlowCore/inst_bandwidth.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0013827340000034383,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.00021011447825003415,
+       "max": 124.99999237060547,
+       "mean": 7.651651677289964,
+       "frac_zero": 0.0,
+       "sha256": "5488a604540c39ed3bb2090396bff03b476aea81f7acffc2f77f3902bb2e8a80"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11456128099996477
+    },
+    "4": {
+     "name": "inst_bandwidth",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0009234699999751683,
+     "module_file": "/home/claude/work/SeismicFlowCore/inst_bandwidth.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0017504840000128752,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.00021011447825003415,
+       "max": 124.99999237060547,
+       "mean": 7.651651677289964,
+       "frac_zero": 0.0,
+       "sha256": "5488a604540c39ed3bb2090396bff03b476aea81f7acffc2f77f3902bb2e8a80"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11520893199997317
+    }
+   }
+  },
+  "inst_freq": {
+   "worker": {
+    "1": {
+     "name": "inst_freq",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0009781940000266331,
+     "module_file": "/home/claude/work/SeismicFlowCore/inst_freq.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0018781050000598043,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 6.381402492523193,
+       "max": 46.44089126586914,
+       "mean": 28.245656863728072,
+       "frac_zero": 0.0,
+       "sha256": "e39d5ea739e528e2e5223b15287c62d3f2654974b7d3f006aee57cc245e0f9b0"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11654542500002663
+    },
+    "4": {
+     "name": "inst_freq",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0013731430000234468,
+     "module_file": "/home/claude/work/SeismicFlowCore/inst_freq.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.003203181999992921,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 6.381402492523193,
+       "max": 46.44089126586914,
+       "mean": 28.245656863728072,
+       "frac_zero": 0.0,
+       "sha256": "e39d5ea739e528e2e5223b15287c62d3f2654974b7d3f006aee57cc245e0f9b0"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.18231583200008572
+    }
+   }
+  },
+  "inst_phase": {
+   "worker": {
+    "1": {
+     "name": "inst_phase",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0008875260000422713,
+     "module_file": "/home/claude/work/SeismicFlowCore/inst_phase.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0019735990000526726,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -179.9539337158203,
+       "max": 179.9942626953125,
+       "mean": -1.8539811314309986,
+       "frac_zero": 0.0,
+       "sha256": "d6df30790f4a9910218eac8602cdf3865e0261ae8219625c17ff7273cd7ec524"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11457075099997382
+    },
+    "4": {
+     "name": "inst_phase",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0009495280000919593,
+     "module_file": "/home/claude/work/SeismicFlowCore/inst_phase.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0024479869999822768,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -179.9539337158203,
+       "max": 179.9942626953125,
+       "mean": -1.8539811314309986,
+       "frac_zero": 0.0,
+       "sha256": "d6df30790f4a9910218eac8602cdf3865e0261ae8219625c17ff7273cd7ec524"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11833202800005438
+    }
+   }
+  },
+  "phase_shift": {
+   "worker": {
+    "1": {
+     "name": "phase_shift",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0010269510000853188,
+     "module_file": "/home/claude/work/SeismicFlowCore/phase_shift.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.000921294000022499,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -288.0036315917969,
+       "max": 286.48541259765625,
+       "mean": 0.5139921125622564,
+       "frac_zero": 0.0,
+       "sha256": "00a40d56a8115d747668d7e8fe6003d78872cffcf084ec2cb2bfdf036945f70b"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11417543000004571
+    },
+    "4": {
+     "name": "phase_shift",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.001005715000019336,
+     "module_file": "/home/claude/work/SeismicFlowCore/phase_shift.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0010331500000120286,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -288.0036315917969,
+       "max": 286.48541259765625,
+       "mean": 0.5139921125622564,
+       "frac_zero": 0.0,
+       "sha256": "00a40d56a8115d747668d7e8fe6003d78872cffcf084ec2cb2bfdf036945f70b"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.1140258550000226
+    }
+   }
+  },
+  "quad_amp": {
+   "worker": {
+    "1": {
+     "name": "quad_amp",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0009196240000619582,
+     "module_file": "/home/claude/work/SeismicFlowCore/quad_amp.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0006808269999964978,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -282.567138671875,
+       "max": 301.66900634765625,
+       "mean": 3.777677193284035e-08,
+       "frac_zero": 0.0,
+       "sha256": "e89659052bff863fcb41d350f37dcff1e4acbe9c03879797670f9f5184a5e9a0"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.13743802300007246
+    },
+    "4": {
+     "name": "quad_amp",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0008221589999948264,
+     "module_file": "/home/claude/work/SeismicFlowCore/quad_amp.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0010465059999660298,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -282.567138671875,
+       "max": 301.66900634765625,
+       "mean": 3.777677193284035e-08,
+       "frac_zero": 0.0,
+       "sha256": "e89659052bff863fcb41d350f37dcff1e4acbe9c03879797670f9f5184a5e9a0"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11734579200003736
+    }
+   }
+  },
+  "reflection_intensity": {
+   "worker": {
+    "1": {
+     "name": "reflection_intensity",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0009903490000624515,
+     "module_file": "/home/claude/work/SeismicFlowCore/reflection_intensity.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0008093110000118031,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 22.345388412475586,
+       "max": 252.48336791992188,
+       "mean": 129.17250755499117,
+       "frac_zero": 0.0,
+       "sha256": "bf9d5d591dd52cefb79723b932c282d1089c2682416e7be1f10d0626d259a8bf"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11444291499992687
+    },
+    "4": {
+     "name": "reflection_intensity",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0009093959999972867,
+     "module_file": "/home/claude/work/SeismicFlowCore/reflection_intensity.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0011497369999915463,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 22.345388412475586,
+       "max": 252.48336791992188,
+       "mean": 129.17250755499117,
+       "frac_zero": 0.0,
+       "sha256": "bf9d5d591dd52cefb79723b932c282d1089c2682416e7be1f10d0626d259a8bf"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11398861899999702
+    }
+   }
+  },
+  "relative_ai": {
+   "worker": {
+    "1": {
+     "name": "relative_ai",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.6861648079999441,
+     "module_file": "/home/claude/work/SeismicFlowCore/relative_ai.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0023282099999732964,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -411.5897521972656,
+       "max": 458.86407470703125,
+       "mean": 1.9210595762779121,
+       "frac_zero": 0.0,
+       "sha256": "4e5dcaade5891f07e103ec073cb9defae562ffece8de0259819cb2d15e251d40"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.9355546340000274
+    },
+    "4": {
+     "name": "relative_ai",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.6129534859999239,
+     "module_file": "/home/claude/work/SeismicFlowCore/relative_ai.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0024584459999914543,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -411.5897521972656,
+       "max": 458.86407470703125,
+       "mean": 1.9210595762779121,
+       "frac_zero": 0.0,
+       "sha256": "4e5dcaade5891f07e103ec073cb9defae562ffece8de0259819cb2d15e251d40"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.8403703520000363
+    }
+   }
+  },
+  "rms_amp": {
+   "worker": {
+    "1": {
+     "name": "rms_amp",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0006929350000746126,
+     "module_file": "/home/claude/work/SeismicFlowCore/rms_amp.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0004887979999921299,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 20.090370178222656,
+       "max": 187.19830322265625,
+       "mean": 96.29895416490035,
+       "frac_zero": 0.0,
+       "sha256": "1bb131c5aeddc5f46ba570da14bce390838edf7f467d8518428ec8f6e49ebec3"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.11496308200003114
+    },
+    "4": {
+     "name": "rms_amp",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0007412909999402473,
+     "module_file": "/home/claude/work/SeismicFlowCore/rms_amp.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0031965760000502996,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 20.090370178222656,
+       "max": 187.19830322265625,
+       "mean": 96.29895416490035,
+       "frac_zero": 0.0,
+       "sha256": "1bb131c5aeddc5f46ba570da14bce390838edf7f467d8518428ec8f6e49ebec3"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.16333293900004264
+    }
+   }
+  },
+  "second_derivative": {
+   "worker": {
+    "1": {
+     "name": "second_derivative",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0007481249999727879,
+     "module_file": "/home/claude/work/SeismicFlowCore/second_derivative.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.00011079600005814427,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -217.25186157226562,
+       "max": 228.20855712890625,
+       "mean": -0.3164073971329344,
+       "frac_zero": 0.0,
+       "sha256": "0847b0127f1033a630da1f0df65e8d7d1b74628ddb65ce042f5bb6a91e1d3561"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.1103809830000273
+    },
+    "4": {
+     "name": "second_derivative",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0007399859999850378,
+     "module_file": "/home/claude/work/SeismicFlowCore/second_derivative.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0002810689999250826,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -217.25186157226562,
+       "max": 228.20855712890625,
+       "mean": -0.3164073971329344,
+       "frac_zero": 0.0,
+       "sha256": "0847b0127f1033a630da1f0df65e8d7d1b74628ddb65ce042f5bb6a91e1d3561"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.1108472679999295
+    }
+   }
+  },
+  "sweetness": {
+   "worker": {
+    "1": {
+     "name": "sweetness",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0008805649999885645,
+     "module_file": "/home/claude/work/SeismicFlowCore/sweetness.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0037971110000398767,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.2405678629875183,
+       "max": 54.12418746948242,
+       "mean": 22.121114671360374,
+       "frac_zero": 0.0,
+       "sha256": "52429db9ae50020cfc4b2a384bf7f6fd10f941da4bdf0611e5109011ac10139e"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.12629126800004542
+    },
+    "4": {
+     "name": "sweetness",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0009402970000564892,
+     "module_file": "/home/claude/work/SeismicFlowCore/sweetness.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.004255895000028431,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.2405678629875183,
+       "max": 54.12418746948242,
+       "mean": 22.121114671360374,
+       "frac_zero": 0.0,
+       "sha256": "52429db9ae50020cfc4b2a384bf7f6fd10f941da4bdf0611e5109011ac10139e"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.1235659180000539
+    }
+   }
+  },
+  "time_gain": {
+   "worker": {
+    "1": {
+     "name": "time_gain",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0007393839999849661,
+     "module_file": "/home/claude/work/SeismicFlowCore/time_gain.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 5.7384000001547975e-05,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -443.0409851074219,
+       "max": 481.9957275390625,
+       "mean": 0.7070961290663984,
+       "frac_zero": 0.0,
+       "sha256": "dac444628e3af02efd51b82d0a1bd92fb2baad615d4182a662b57d1949c132d1"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.12613019900004474
+    },
+    "4": {
+     "name": "time_gain",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0008123840000280325,
+     "module_file": "/home/claude/work/SeismicFlowCore/time_gain.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0002774339999405129,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -443.0409851074219,
+       "max": 481.9957275390625,
+       "mean": 0.7070961290663984,
+       "frac_zero": 0.0,
+       "sha256": "dac444628e3af02efd51b82d0a1bd92fb2baad615d4182a662b57d1949c132d1"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.157321224000043
+    }
+   }
+  },
+  "variance": {
+   "worker": {
+    "1": {
+     "name": "variance",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0008637280000129977,
+     "module_file": "/home/claude/work/SeismicFlowCore/variance.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.008811703999981546,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.01861417293548584,
+       "max": 0.6539491415023804,
+       "mean": 0.22793580176949035,
+       "frac_zero": 0.0,
+       "sha256": "1efbc6443bdd12f8136d8537121638ced6b7991cf9fc3bf7574187492cffe864"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.17796047800004544
+    },
+    "4": {
+     "name": "variance",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.0006497870000430339,
+     "module_file": "/home/claude/work/SeismicFlowCore/variance.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.006944079000049896,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": 0.01861417293548584,
+       "max": 0.6539491415023804,
+       "mean": 0.22793580176949035,
+       "frac_zero": 0.0,
+       "sha256": "1efbc6443bdd12f8136d8537121638ced6b7991cf9fc3bf7574187492cffe864"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.1269050519999837
+    }
+   }
+  },
+  "xcorr": {
+   "worker": {
+    "1": {
+     "name": "xcorr",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.000808370999948238,
+     "module_file": "/home/claude/work/SeismicFlowCore/xcorr.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0013766670000450176,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -0.7291868329048157,
+       "max": 0.9967892169952393,
+       "mean": -0.002946394662061591,
+       "frac_zero": 0.8671875,
+       "sha256": "8405e6cce8132c0689001750dabb3f872e00ec32d21d98a541306aab2bf4ba58"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.10109186700003647
+    },
+    "4": {
+     "name": "xcorr",
+     "import_ok": true,
+     "run_ok": true,
+     "import_s": 0.000879094000083569,
+     "module_file": "/home/claude/work/SeismicFlowCore/xcorr.cpython-312-x86_64-linux-gnu.so",
+     "call_s": 0.0015528070000527805,
+     "n_outputs": 1,
+     "outputs": [
+      {
+       "shape": [
+        128,
+        16,
+        16
+       ],
+       "dtype": "float32",
+       "n_nan": 0,
+       "n_inf": 0,
+       "min": -0.7291868329048157,
+       "max": 0.9967892169952393,
+       "mean": -0.002946394662061591,
+       "frac_zero": 0.8671875,
+       "sha256": "8405e6cce8132c0689001750dabb3f872e00ec32d21d98a541306aab2bf4ba58"
+      }
+     ],
+     "repeatable": true,
+     "input_unmodified": true,
+     "sane": true,
+     "wall_s": 0.09459806199993182
+    }
+   }
+  }
+ }
+}

@@ -22,25 +22,79 @@ No production-grade, open-source Python library exists for seismic attribute com
 
 ## Installation
 
-### Prerequisites Checklist
+### Option 1 — Prebuilt wheel (recommended)
 
-Before building, verify you have **all four** of the following. Do not skip any step.
+Prebuilt wheels for **CPython 3.12 (64-bit)** are attached to each [release](https://github.com/SeismicFlow/SeismicFlowCore/releases). No compiler, FFTW or Eigen installation is needed: the FFTW runtime is bundled in the wheel (together with the OpenMP runtime on Windows), and `numpy` (≥ 1.26) and `scipy` (≥ 1.11) are installed automatically.
+
+| Platform | Wheel | Requirements |
+|---|---|---|
+| Windows x86-64 | `seismicflowcore-0.1.0-cp312-cp312-win_amd64.whl` | CPU with AVX2 and FMA (Intel Haswell, AMD Zen, or newer). Tested on Windows 10. |
+| Linux x86-64 | `seismicflowcore-0.1.0-cp312-cp312-linux_x86_64.whl` | glibc ≥ 2.29, libgomp, CPU with AVX2 and FMA. Tested on Ubuntu 24.04. |
+
+Install the wheel for your platform (a virtual environment is recommended).
+
+Windows:
+
+```
+pip install https://github.com/SeismicFlow/SeismicFlowCore/releases/download/v0.1.0/seismicflowcore-0.1.0-cp312-cp312-win_amd64.whl
+```
+
+Linux:
+
+```
+pip install https://github.com/SeismicFlow/SeismicFlowCore/releases/download/v0.1.0/seismicflowcore-0.1.0-cp312-cp312-linux_x86_64.whl
+```
+
+Alternatively, download the `.whl` file from the release page and run `pip install <path to the file>`.
+
+Verify the installation:
+
+```python
+import numpy as np
+import SeismicFlowCore as sfc
+
+data = np.random.randn(100, 50, 50).astype(np.float32)
+dt   = 0.004
+
+print("envelope:    ", sfc.envelope(data).shape)
+print("inst_phase:  ", sfc.inst_phase(data).shape)
+print("inst_freq:   ", sfc.inst_freq(data, dt).shape)
+print("variance:    ", sfc.variance(data).shape)
+print("coherence:   ", sfc.coherence(data).shape)
+print("agc:         ", sfc.agc(data).shape)
+print("dip:         ", sfc.dip(data).shape)
+print()
+print("OK — all extensions loaded successfully")
+```
+
+If every line prints a shape, the installation is complete.
+
+If the import fails:
+
+- **Windows, `DLL load failed while importing ...`** — install the latest Microsoft Visual C++ Redistributable (x64) and try again.
+- **Linux, `version 'GLIBC_...' not found`, or "Illegal instruction"** — your glibc is older than 2.29 or your CPU lacks AVX2/FMA. Build from source instead (Option 2).
 
 ---
 
-#### 1 — Microsoft Visual Studio Build Tools 2022
+### Option 2 — Build from source
+
+Use this if no wheel fits your platform or Python version, or if you want to modify the code. The repository folder itself is the `SeismicFlowCore` package: the build places the compiled modules next to the `.pyx` files.
+
+#### Windows (MSVC)
+
+Verify that you have **all four** of the following. Do not skip any step.
+
+**1 — Microsoft Visual Studio Build Tools 2022**
 
 Download free from: https://visualstudio.microsoft.com/visual-cpp-build-tools/
 
-During install, check **"Desktop development with C++"** and nothing else is required.
+During install, check **"Desktop development with C++"**; nothing else is required.
 
 > You do **not** need full Visual Studio. Build Tools alone is sufficient.
 
 Verify after install: open **"x64 Native Tools Command Prompt for VS 2022"** from your Start menu. If it exists, you're good.
 
----
-
-#### 2 — Python 3.12 (64-bit)
+**2 — Python 3.12 (64-bit)**
 
 Download from: https://www.python.org/downloads/
 
@@ -55,9 +109,7 @@ Should print `Python 3.12.x`. Then install the required packages:
 pip install numpy scipy cython
 ```
 
----
-
-#### 3 — FFTW3 (Windows prebuilt binaries)
+**3 — FFTW3 (Windows prebuilt binaries)**
 
 Required by all complex trace attributes and cross-correlation.
 
@@ -74,52 +126,42 @@ Required by all complex trace attributes and cross-correlation.
    ```
    You should now see `libfftw3f-3.lib` in that folder.
 
-4. Add `C:/fftw-3.3.5` to your system PATH, **or** add this to the top of any script that uses SeismicFlowCore:
-   ```python
-   import os
-   os.add_dll_directory("C:/fftw-3.3.5")
-   ```
-
-> **If you get `DLL load failed while importing` at runtime**, Windows cannot find `libfftw3f-3.dll`. The `os.add_dll_directory` fix above solves it without touching system PATH.
-
----
-
-#### 4 — Eigen 3.4 (header-only, no compilation needed)
+**4 — Eigen 3.4 (header-only, no compilation needed)**
 
 Required only by `coherence` and `chaos`. All other modules build without it.
 
-Option A — clone with git:
+Option A — clone with git (version 3.4.0):
 ```
-git clone https://gitlab.com/libeigen/eigen.git C:/eigen-3.4.0
+git clone --branch 3.4.0 --depth 1 https://gitlab.com/libeigen/eigen.git C:/eigen-3.4.0
 ```
 
-Option B — download the zip from https://eigen.tuxfamily.org and extract to `C:/eigen-3.4.0`
+Option B — download the 3.4.0 zip from https://eigen.tuxfamily.org and extract to `C:/eigen-3.4.0`
 
 No build step is needed. Eigen is header-only — the compiler just needs to find the folder.
 
----
+**Step 1 — Check the install paths**
 
-### Step 1 — Update paths in setup files
+The setup scripts expect FFTW in `C:/fftw-3.3.5` and Eigen in `C:/eigen-3.4.0`. If you installed them elsewhere, update the paths: the `FFTW_DIR = "..."` line near the top of each FFTW-based setup file, and the Eigen path in the include list of `setup_chaos.py` and `setup_coherence.py`. To list every line that needs checking, run this in the repository folder:
 
-Open each setup file and confirm these paths match where you actually installed things:
-
-```python
-FFTW_DIR  = "C:/fftw-3.3.5"   # must contain libfftw3f-3.lib and libfftw3f-3.dll
-EIGEN_DIR = "C:/eigen-3.4.0"  # only needed by setup_coherence.py and setup_chaos.py
+```
+findstr /n "fftw-3.3.5 eigen-3.4.0" setup_*.py
 ```
 
-If you used different install paths, update accordingly.
+**Step 2 — Build all extensions**
 
----
+Open a regular PowerShell or Command Prompt (not the VS prompt), then clone the repository:
 
-### Step 2 — Build all extensions
-
-Open a regular PowerShell or Command Prompt (not the VS prompt), navigate to the repo folder, and run each line:
-
-```bash
+```
 git clone https://github.com/SeismicFlow/SeismicFlowCore
 cd SeismicFlowCore
+```
 
+The folder must be named exactly `SeismicFlowCore`: it is the Python package name. Then run each build line:
+
+<details>
+<summary>Build commands for all 28 modules</summary>
+
+```
 python setup_agc.py build_ext --inplace
 python setup_app_polarity.py build_ext --inplace
 python setup_azimuth.py build_ext --inplace
@@ -148,49 +190,77 @@ python setup_sweetness.py build_ext --inplace
 python setup_time_gain.py build_ext --inplace
 python setup_variance.py build_ext --inplace
 python setup_xcorr.py build_ext --inplace
-
-pip install -e .
 ```
+
+</details>
 
 Each module prints `copying ... ->` on success. If any module fails, the others are unaffected — fix and rerun that one individually.
 
----
+**Step 3 — Use and verify the build**
 
-### Step 3 — Verify your build
+The compiled modules sit next to the `.pyx` files, and the cloned folder is the package. Run Python from the folder that **contains** `SeismicFlowCore` (or add that folder to `PYTHONPATH`):
 
-Run the following to confirm all extensions loaded correctly:
+```
+cd ..
+python -c "import SeismicFlowCore as sfc; print(sfc.__file__)"
+```
+
+At run time Windows must find `libfftw3f-3.dll`. Do one of the following: add `C:/fftw-3.3.5` to your system PATH, copy `libfftw3f-3.dll` into the `SeismicFlowCore` folder next to the compiled modules, or add this to the top of any script that uses SeismicFlowCore:
 
 ```python
 import os
 os.add_dll_directory("C:/fftw-3.3.5")
-
-import numpy as np
-import SeismicFlowCore as sfc
-
-data = np.random.randn(100, 50, 50).astype(np.float32)
-dt   = 0.004
-
-print("envelope:    ", sfc.envelope(data).shape)
-print("inst_phase:  ", sfc.inst_phase(data).shape)
-print("inst_freq:   ", sfc.inst_freq(data, dt).shape)
-print("variance:    ", sfc.variance(data).shape)
-print("coherence:   ", sfc.coherence(data).shape)
-print("agc:         ", sfc.agc(data).shape)
-print("dip:         ", sfc.dip(data).shape)
-print()
-print("OK — all extensions loaded successfully")
 ```
 
-If every line prints a shape, your build is complete.
+> **If you get `DLL load failed while importing`**, Windows cannot find `libfftw3f-3.dll`. The `os.add_dll_directory` fix above solves it without touching system PATH.
+
+Then run the verification snippet from Option 1.
+
+#### Linux (GCC)
+
+Requirements: x86-64 Linux, GCC/G++ with C++17 support, and the three folders below, placed next to `build_linux.py` inside the cloned repository:
+
+```
+SeismicFlowCore/
+├── build_linux.py
+├── *.pyx
+├── eigen/Eigen/Dense        Eigen 3.4 headers (header-only)
+├── fftw/include/fftw3.h     FFTW 3.3.x, single precision, shared library
+├── fftw/lib/libfftw3f.so*
+└── python312/bin/python3    CPython 3.12 interpreter
+```
+
+Eigen: `git clone --branch 3.4.0 --depth 1 https://gitlab.com/libeigen/eigen.git eigen`
+
+FFTW: download the FFTW 3.3.x source, then build it into the `fftw/` folder with `./configure --enable-single --enable-shared --prefix=<path to SeismicFlowCore>/fftw && make && make install`.
+
+Then install the Python packages and build:
+
+```
+git clone https://github.com/SeismicFlow/SeismicFlowCore
+cd SeismicFlowCore
+# ... place eigen/, fftw/ and python312/ here, as shown above ...
+
+python312/bin/python3 -m pip install cython numpy scipy setuptools
+python312/bin/python3 build_linux.py -j 4
+```
+
+The script checks the toolchain and all dependencies before compiling (`--check` runs only this preflight; `--list` prints the module list). Building all 28 modules takes about 3.5 minutes on one core. The compiled `.so` files are placed next to the `.pyx` files and find FFTW through a relative RUNPATH, so keep `fftw/lib` inside the folder; the folder can then be moved or copied freely.
+
+To use the build, run Python from the folder that contains `SeismicFlowCore` (or add it to `PYTHONPATH`) with any CPython 3.12 that has numpy ≥ 1.26 and scipy ≥ 1.11:
+
+```
+cd ..
+SeismicFlowCore/python312/bin/python3 -c "import SeismicFlowCore as sfc; print(sfc.__file__)"
+```
+
+Then run the verification snippet from Option 1.
 
 ---
 
 ## Quick Start
 
 ```python
-import os
-os.add_dll_directory("C:/fftw-3.3.5")  # only needed if not in system PATH
-
 import numpy as np
 import SeismicFlowCore as sfc
 
@@ -345,6 +415,19 @@ Three implementation tiers selected on engineering grounds:
 - **Tier 1 — Full Cython + OpenMP**: structure-tensor attributes (chaos, GST coherence), gradient-based attributes, discontinuity attributes
 - **Tier 2 — FFTW3 + Cython + OpenMP**: all 9 complex trace attributes via batched per-inline DFT plans with thread-safe `fftwf_execute_dft`
 - **Tier 3 — Cython bottleneck + SciPy**: relative acoustic impedance (parallelized integration in Cython, zero-phase Butterworth filtering via `sosfiltfilt`)
+
+---
+
+## Testing and Reproducibility
+
+[TESTING.md](TESTING.md) documents the build environments, the test procedure, the numerical tolerance and the per-function results. In summary, on a seeded synthetic test cube (128 × 16 × 16 samples):
+
+- All 28 extension modules compile on Linux (GCC 13.3) and Windows (MSVC), and pass the import, execution, finite-output and repeatability checks.
+- Output is bit-identical with `OMP_NUM_THREADS=1` and `4` on both platforms (28 / 28).
+- The Linux and Windows wheels were each installed into a clean environment and passed the full suite (28 / 28).
+- Windows and Linux outputs agree within the stated tolerance for all 28 functions; the largest difference is 2.7e-06 of the dynamic range, and 6 of 28 outputs are bitwise identical.
+- A strict-IEEE rebuild differs from the fast-math build by at most 8.5e-06 of the dynamic range.
+- The suite also passes with NumPy 1.26.4 and SciPy 1.13.1.
 
 ---
 
