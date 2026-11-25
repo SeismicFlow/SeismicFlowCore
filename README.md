@@ -78,7 +78,7 @@ If the import fails:
 
 ### Option 2 — Build from source
 
-Use this if no wheel fits your platform or Python version, or if you want to modify the code. The repository folder itself is the `SeismicFlowCore` package: the build places the compiled modules next to the `.pyx` files.
+Use this if no wheel fits your platform or Python version, or if you want to modify the code. The sources live in the `SeismicFlowCore/` package folder inside the repository; the build places the compiled modules next to the `.pyx` files in that folder.
 
 #### Windows (MSVC)
 
@@ -141,7 +141,7 @@ No build step is needed. Eigen is header-only — the compiler just needs to fin
 
 **Step 1 — Check the install paths**
 
-The setup scripts expect FFTW in `C:/fftw-3.3.5` and Eigen in `C:/eigen-3.4.0`. If you installed them elsewhere, update the paths: the `FFTW_DIR = "..."` line near the top of each FFTW-based setup file, and the Eigen path in the include list of `setup_chaos.py` and `setup_coherence.py`. To list every line that needs checking, run this in the repository folder:
+The setup scripts expect FFTW in `C:/fftw-3.3.5` and Eigen in `C:/eigen-3.4.0`. If you installed them elsewhere, update the paths: the `FFTW_DIR = "..."` line near the top of each FFTW-based setup file, and the Eigen path in the include list of `setup_chaos.py` and `setup_coherence.py`. To list every line that needs checking, run this in the package folder (`SeismicFlowCore\SeismicFlowCore` after cloning, see Step 2):
 
 ```
 findstr /n "fftw-3.3.5 eigen-3.4.0" setup_*.py
@@ -153,10 +153,10 @@ Open a regular PowerShell or Command Prompt (not the VS prompt), then clone the 
 
 ```
 git clone https://github.com/SeismicFlow/SeismicFlowCore
-cd SeismicFlowCore
+cd SeismicFlowCore\SeismicFlowCore
 ```
 
-The folder must be named exactly `SeismicFlowCore`: it is the Python package name. Then run each build line:
+Then run each build line from inside this package folder:
 
 <details>
 <summary>Build commands for all 28 modules</summary>
@@ -198,14 +198,14 @@ Each module prints `copying ... ->` on success. If any module fails, the others 
 
 **Step 3 — Use and verify the build**
 
-The compiled modules sit next to the `.pyx` files, and the cloned folder is the package. Run Python from the folder that **contains** `SeismicFlowCore` (or add that folder to `PYTHONPATH`):
+The compiled modules sit next to the `.pyx` files in the package folder. Run Python from the repository root, the folder that **contains** the `SeismicFlowCore` package folder (or add the repository root to `PYTHONPATH`):
 
 ```
 cd ..
 python -c "import SeismicFlowCore as sfc; print(sfc.__file__)"
 ```
 
-At run time Windows must find `libfftw3f-3.dll`. Do one of the following: add `C:/fftw-3.3.5` to your system PATH, copy `libfftw3f-3.dll` into the `SeismicFlowCore` folder next to the compiled modules, or add this to the top of any script that uses SeismicFlowCore:
+At run time Windows must find `libfftw3f-3.dll`. Do one of the following: add `C:/fftw-3.3.5` to your system PATH, copy `libfftw3f-3.dll` into the package folder next to the compiled modules, or add this to the top of any script that uses SeismicFlowCore:
 
 ```python
 import os
@@ -218,36 +218,37 @@ Then run the verification snippet from Option 1.
 
 #### Linux (GCC)
 
-Requirements: x86-64 Linux, GCC/G++ with C++17 support, and the three folders below, placed next to `build_linux.py` inside the cloned repository:
+Requirements: x86-64 Linux, GCC/G++ with C++17 support, and the three folders below, placed next to `build_linux.py` inside the package folder of the cloned repository:
 
 ```
-SeismicFlowCore/
-├── build_linux.py
-├── *.pyx
-├── eigen/Eigen/Dense        Eigen 3.4 headers (header-only)
-├── fftw/include/fftw3.h     FFTW 3.3.x, single precision, shared library
-├── fftw/lib/libfftw3f.so*
-└── python312/bin/python3    CPython 3.12 interpreter
+SeismicFlowCore/                 repository root
+└── SeismicFlowCore/             package folder
+    ├── build_linux.py
+    ├── *.pyx
+    ├── eigen/Eigen/Dense        Eigen 3.4 headers (header-only)
+    ├── fftw/include/fftw3.h     FFTW 3.3.x, single precision, shared library
+    ├── fftw/lib/libfftw3f.so*
+    └── python312/bin/python3    CPython 3.12 interpreter
 ```
 
-Eigen: `git clone --branch 3.4.0 --depth 1 https://gitlab.com/libeigen/eigen.git eigen`
+Eigen (run inside the package folder): `git clone --branch 3.4.0 --depth 1 https://gitlab.com/libeigen/eigen.git eigen`
 
-FFTW: download the FFTW 3.3.x source, then build it into the `fftw/` folder with `./configure --enable-single --enable-shared --prefix=<path to SeismicFlowCore>/fftw && make && make install`.
+FFTW: download the FFTW 3.3.x source, then build it into the `fftw/` folder with `./configure --enable-single --enable-shared --prefix=<path to the package folder>/fftw && make && make install`.
 
 Then install the Python packages and build:
 
 ```
 git clone https://github.com/SeismicFlow/SeismicFlowCore
-cd SeismicFlowCore
+cd SeismicFlowCore/SeismicFlowCore
 # ... place eigen/, fftw/ and python312/ here, as shown above ...
 
 python312/bin/python3 -m pip install cython numpy scipy setuptools
 python312/bin/python3 build_linux.py -j 4
 ```
 
-The script checks the toolchain and all dependencies before compiling (`--check` runs only this preflight; `--list` prints the module list). Building all 28 modules takes about 3.5 minutes on one core. The compiled `.so` files are placed next to the `.pyx` files and find FFTW through a relative RUNPATH, so keep `fftw/lib` inside the folder; the folder can then be moved or copied freely.
+The script checks the toolchain and all dependencies before compiling (`--check` runs only this preflight; `--list` prints the module list). Building all 28 modules takes about 3.5 minutes on one core. The compiled `.so` files are placed next to the `.pyx` files and find FFTW through a relative RUNPATH, so keep `fftw/lib` inside the package folder; the package folder can then be moved or copied freely.
 
-To use the build, run Python from the folder that contains `SeismicFlowCore` (or add it to `PYTHONPATH`) with any CPython 3.12 that has numpy ≥ 1.26 and scipy ≥ 1.11:
+To use the build, run Python from the repository root (or add it to `PYTHONPATH`) with any CPython 3.12 that has numpy ≥ 1.26 and scipy ≥ 1.11:
 
 ```
 cd ..
